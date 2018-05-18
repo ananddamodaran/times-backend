@@ -1,0 +1,92 @@
+buildscript {
+    repositories {
+        //  jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        //  classpath 'com.google.appengine:gradle-appengine-plugin:1.9.42'
+        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.2'
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.3'
+    }
+}
+
+repositories {
+    maven {
+        url 'https://maven-central.storage.googleapis.com'
+    }
+    jcenter()
+    mavenCentral()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.5'
+}
+
+def projectId = 'standardenv-gradle'
+
+apply plugin: 'java'
+apply plugin: 'war'
+//apply plugin: 'appengine'
+apply plugin: 'com.google.cloud.tools.endpoints-framework-server'
+apply plugin: 'com.google.cloud.tools.appengine'
+
+
+
+dependencies {
+    // appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.42'
+    // compile 'com.google.appengine:appengine-endpoints:1.9.42'
+    // compile 'com.google.appengine:appengine-endpoints-deps:1.9.42'
+    compile 'javax.servlet:servlet-api:2.5'
+    compile 'com.ganyo:gcm-server:1.0.2'
+    compile fileTree('lib')
+    // compile 'com.google.appengine:appengine-api-labs:1.9.42'
+    compile 'com.googlecode.objectify:objectify:5.0.3'
+
+    compile 'com.google.endpoints:endpoints-framework:2.0.8'
+    compile 'com.google.endpoints:endpoints-management-control-appengine:1.0.5'
+    compile 'com.google.endpoints:endpoints-framework-auth:1.0.5'
+
+}
+
+endpointsServer {
+    // Endpoints Framework Plugin server-side configuration
+    hostname = "${projectId}.appspot.com"
+}
+
+
+/*appengine {
+    downloadSdk = true
+    appcfg {
+        oauth2 = true
+    }
+    endpoints {
+        getClientLibsOnBuild = true
+        getDiscoveryDocsOnBuild = true
+    }
+}*/
+
+appengine {  // App Engine tasks configuration
+    deploy {   // deploy configuration
+        version = findProperty("appengine.deploy.version")
+
+        def promoteProp = findProperty("appengine.deploy.promote")
+        if (promoteProp != null) {
+            promote = new Boolean(promoteProp)
+        }
+    }
+}
+
+//sourceCompatibility = JavaVersion.VERSION_1_7
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// this replaces the ${endpoints.project.id} in appengine-web.xml and web.xml
+task replaceProjectId(type: Copy) {
+    from 'src/main/webapp/WEB-INF/'
+    include '*.xml'
+    into "build/exploded-${archivesBaseName}/WEB-INF"
+    expand(endpoints:[project:[id:projectId]])
+    filteringCharset = 'UTF-8'
+}
+
