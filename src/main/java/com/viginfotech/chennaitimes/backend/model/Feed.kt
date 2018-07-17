@@ -4,35 +4,30 @@ import com.googlecode.objectify.annotation.*
 
 @Entity
 @Cache
-class Feed {
+data class Feed(
 
     @Unindex
-    var title: String? = null
+    var title: String? = null,
     @Unindex
-    var detailedTitle: String? = null
+    var detailedTitle: String? = null,
     @Unindex
-    var summary: String? = null
+    var summary: String? = null,
     @Index
-    var pubDate: Long? = null
+    var pubDate: Long? = null,
     @Id
-    var guid: String? = null
+    var guid: String? = null,
     @Unindex
-    var thumbnail: String? = null
+    var thumbnail: String? = null,
     @Unindex
-    var image: String? = null
+    var image: String? = null,
     @Unindex
-    var detailNews: String? = null
+    var detailNews: String? = null,
     @Index
-    var categoryId: Int = 0
+    var categoryId: Int = 0,
     @Index
     var sourceId: Int = 0
 
 
-    override fun equals(obj: Any?): Boolean {
-        return obj is Feed && guid == obj.guid
-    }
+)
 
-    override fun toString(): String {
-        return title!! + "\n"
-    }
-}
+
