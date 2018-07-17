@@ -20,26 +20,9 @@ import java.util.logging.Logger
 
 
 
-/**
- * A registration endpoint class we are exposing for a device's GCM registration id on the backend
- *
- * For more information, see
- * https://developers.google.com/appengine/docs/java/endpoints/
- *
- * NOTE: This endpoint does not use any form of authorization or
- * authentication! If this app is deployed, anyone can access this endpoint! If
- * you'd like to add authentication, take a look at the documentation.
- */
 
 @Api(name = "chennaiTimesApi", version = "v1", namespace = ApiNamespace(ownerDomain = Constants.API_OWNER, ownerName = Constants.API_OWNER, packagePath = Constants.API_PACKAGE_PATH))
 class RegistrationEndpoint {
-
-
-    /**
-     * Register a device to the backend
-     *
-     * @param regId The Google Cloud Messaging registration Id to add
-     */
 
     @ApiMethod(name = "register")
     fun registerDevice(@Named("regId") regId: String) {
@@ -52,13 +35,6 @@ class RegistrationEndpoint {
         ofy().save().entity(record).now()
     }
 
-
-    /**
-     * Unregister a device from the backend
-     *
-     * @param regId The Google Cloud Messaging registration Id to remove
-     */
-
     @ApiMethod(name = "unregister")
     fun unregisterDevice(@Named("regId") regId: String) {
         val record = findRecord(regId)
@@ -68,14 +44,6 @@ class RegistrationEndpoint {
         }
         ofy().delete().entity(record).now()
     }
-
-
-    /**
-     * Return a collection of registered devices
-     *
-     * @param count The number of devices to list
-     * @return a list of Google Cloud Messaging registration Ids
-     */
 
     @ApiMethod(name = "listDevices")
     fun listDevices(@Named("count") count: Int): CollectionResponse<RegistrationRecord> {

@@ -25,13 +25,13 @@ class Nakkheeran {
     companion object {
 
         private fun getUri(category: Int): String {
-            when (category) {
-                CATEGORY_HEADLINES -> return Config.Nakkheeran.NAKKHEERAN_HEADLINES
-                CATEGORY_TAMILNADU -> return Config.Nakkheeran.NAKKHEERAN_TAMILNADU
-                CATEGORY_INDIA -> return Config.Nakkheeran.NAKKHEERAN_INDIA
-                CATEGORY_WORLD -> return Config.Nakkheeran.NAKKHEERAN_WORLD
-                CATEGORY_SPORTS -> return Config.Nakkheeran.NAKKHEERAN_SPORTS
-                else -> return ""
+            return when (category) {
+                CATEGORY_HEADLINES -> Config.Nakkheeran.NAKKHEERAN_HEADLINES
+                CATEGORY_TAMILNADU -> Config.Nakkheeran.NAKKHEERAN_TAMILNADU
+                CATEGORY_INDIA -> Config.Nakkheeran.NAKKHEERAN_INDIA
+                CATEGORY_WORLD -> Config.Nakkheeran.NAKKHEERAN_WORLD
+                CATEGORY_SPORTS -> Config.Nakkheeran.NAKKHEERAN_SPORTS
+                else -> ""
             }
         }
 

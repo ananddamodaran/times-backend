@@ -25,12 +25,12 @@ class OneIndia {
     companion object {
 
         private fun getUri(category: Int): String? {
-            when (category) {
-                CATEGORY_TAMILNADU -> return Config.OneIndia.ONEINDIA_TAMILNADU
-                CATEGORY_INDIA -> return Config.OneIndia.ONEINDIA_INDIA
-                CATEGORY_WORLD -> return Config.OneIndia.ONEINDIA_WORLD
-                CATEGORY_BUSINESS -> return Config.OneIndia.ONEINDIA_BUSINESS
-                else -> return null
+            return when (category) {
+                CATEGORY_TAMILNADU -> Config.OneIndia.ONEINDIA_TAMILNADU
+                CATEGORY_INDIA -> Config.OneIndia.ONEINDIA_INDIA
+                CATEGORY_WORLD -> Config.OneIndia.ONEINDIA_WORLD
+                CATEGORY_BUSINESS -> Config.OneIndia.ONEINDIA_BUSINESS
+                else -> null
             }
         }
 
@@ -40,7 +40,7 @@ class OneIndia {
                 CATEGORY_TAMILNADU, CATEGORY_INDIA, CATEGORY_WORLD, CATEGORY_BUSINESS -> {
 
                     feedList = QueryUtils.queryCategorySortbyPubDate(SOURCE_ONEINDIA, category)
-                    if (feedList.size == 0) {
+                    if (feedList.isEmpty()) {
                         println("Fetching from net $category")
                         feedList = UriFetch.fetchOneIndiaData(category, getUri(category)!!)
 
@@ -49,11 +49,11 @@ class OneIndia {
                             feedList = removeDuplicates(SOURCE_ONEINDIA, Arrays.asList<Int>(category), feedList)
                             println("filtered size oneindia" + feedList!!.size)
 
-                            if (feedList!!.size > 0) {
+                            feedList = if (feedList.isNotEmpty()) {
                                 ofy().save().entities(feedList).now()
-                                feedList = QueryUtils.queryCategorySortbyPubDate(SOURCE_ONEINDIA, category)
+                                QueryUtils.queryCategorySortbyPubDate(SOURCE_ONEINDIA, category)
                             } else {
-                                feedList = QueryUtils.queryLatest7Feeds(SOURCE_ONEINDIA, category)
+                                QueryUtils.queryLatest7Feeds(SOURCE_ONEINDIA, category)
                             }
                         }
 

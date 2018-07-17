@@ -21,32 +21,13 @@ import java.io.IOException
 import java.util.logging.Logger
 
 
-/**
- * An endpoint to send messages to devices registered with the backend
- *
- * For more information, see
- * https://developers.google.com/appengine/docs/java/endpoints/
- *
- * NOTE: This endpoint does not use any form of authorization or
- * authentication! If this app is deployed, anyone can access this endpoint! If
- * you'd like to add authentication, take a look at the documentation.
- */
-
 @Api(name = "chennaiTimesApi", version = "v1", namespace = ApiNamespace(ownerDomain = Constants.API_OWNER, ownerName = Constants.API_OWNER,
         packagePath = Constants.API_PACKAGE_PATH))
 class MessagingEndpoint {
-
-
-    /**
-     * Send to the first 10 devices (You can modify this to send to any number of devices or a specific device)
-     *
-     * @param message The message to send
-     */
-
     @Throws(IOException::class)
     fun sendMessage(@Named("message") message: String?) {
         var message = message
-        if (message == null || message.trim { it <= ' ' }.length == 0) {
+        if (message == null || message.trim { it <= ' ' }.isEmpty()) {
             log.warning("Not sending message because it is empty")
             return
         }
@@ -69,7 +50,7 @@ class MessagingEndpoint {
                     ofy().save().entity(record).now()
                 }
             } else {
-                val error = result.getErrorCodeName()
+                val error = result.errorCodeName
                 if (error == com.google.android.gcm.server.Constants.ERROR_NOT_REGISTERED) {
                     log.warning("Registration Id " + record.regId + " no longer registered with GCM, removing from datastore")
                     // if the device is no longer registered with Gcm, remove it from the datastore
@@ -83,12 +64,9 @@ class MessagingEndpoint {
 
     companion object {
         private val log = Logger.getLogger(MessagingEndpoint::class.java.name)
-
-
         /** Api Keys can be obtained from the google cloud console  */
-
         //private static final String API_KEY = System.getProperty("gcm.api.key");
-        private val API_KEY = "AIzaSyAlMkvyu5OFe_-_ohS2jbnWHqsxi7HJp_Y"
+        private const val API_KEY = "AIzaSyAlMkvyu5OFe_-_ohS2jbnWHqsxi7HJp_Y"
     }
 }
 

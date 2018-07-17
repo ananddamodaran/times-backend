@@ -33,19 +33,19 @@ class Dinamalar {
         fun queryDinamalarNews(category: Int): List<Feed>? {
 
             var feedList: List<Feed>? = QueryUtils.queryCategorySortbyPubDate(SOURCE_DINAMALAR, category)
-            if (feedList!!.size == 0) {
+            if (feedList!!.isEmpty()) {
                 println("Fetching from net $category dinamalar")
                 feedList = fetchDinamalarNews(category)
                 if (feedList != null) {
 
                     feedList = removeDuplicates(SOURCE_DINAMALAR, Arrays.asList<Int>(category), feedList)
                     println("filtered size dinamalar" + feedList!!.size)
-                    if (feedList!!.size > 0) {
-                       ofy().save().entities(feedList).now()
+                    feedList = if (feedList.isNotEmpty()) {
+                        ofy().save().entities(feedList).now()
 
-                        feedList = QueryUtils.queryCategorySortbyPubDate(SOURCE_DINAMALAR, category)
+                        QueryUtils.queryCategorySortbyPubDate(SOURCE_DINAMALAR, category)
                     } else {
-                        feedList = QueryUtils.queryLatest7Feeds(SOURCE_DINAMALAR, category)
+                        QueryUtils.queryLatest7Feeds(SOURCE_DINAMALAR, category)
                     }
 
                 }
@@ -57,10 +57,10 @@ class Dinamalar {
 
 
         fun getDetail(guid: String, categroy: Int): Feed? {
-            when (categroy) {
-                CATEGORY_BUSINESS -> return readBusinessNews(guid)
-                CATEGORY_CINEMA -> return readCinema(guid)
-                else -> return getNews(guid)
+            return when (categroy) {
+                CATEGORY_BUSINESS -> readBusinessNews(guid)
+                CATEGORY_CINEMA -> readCinema(guid)
+                else -> getNews(guid)
             }
         }
 
