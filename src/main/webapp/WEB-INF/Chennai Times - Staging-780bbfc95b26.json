@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chennai-times-staging",
+  "private_key_id": "780bbfc95b26584d8ccdb4573f59fa0971f8a026",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCxQH02A/5xqj9\nTX8vn8juOO8pA0I2DTb/mYawvZ1D6Z8pqd99sBURssMg381VzpY0ifEK11eFxSyG\nIrh8YSg1Gvi277Ie6Y0ffeMctYwclvoTJeyO5M+5Ucb+81ji++3mReoVRTpIqb06\noHrYR0ydSklAWIojbXIzgzUxa+Xx9TUWglRstoLEvvT+4A5JYNjZ2R9jmFV8g0Hx\nCcL40ZrJSprThd1blf0OUjBGDs2A+DQDz8P7B4ePduMM6htm/nL9wPpcCu8qVADF\nt4N088CsEgFdXjjkrivD/HH2tcCobUZTuQMKnyW7kOTBTyf3yIxHq+fd+qLZHara\nJtiJQ8GTAgMBAAECggEAK/9d+EXgof9vCD176DGzraC94eljCRvGG0o+o2lJ/9/j\n/QDrRBTFRai4rJHx7BrNUpQAl/7aPhUzACASxcIa15g+q/CMr6/5ma4R4lfejUzL\ntAyimgr1I7tl9QzavPfFH3oWrXRkfKqfXQGIjpfYpkV0M61skyEzpZBTsVTa7mOd\nldFWvLicsWFmgXdalskW+4PYabLKJPm7bz2uqxPgslcXpKBFupWsXaxBGD8edUIu\ng1SyJVgFXvZgbyKBcY6PkJxvLZ/+3J76J63NIz5Dqo9KXDxwKqRhoUQKCCvE4XDn\n0v+eKzXAr9yoLx3mhHKtjUzPdPg1C5gARmtwpQARgQKBgQDg+DrO4CyABKUbYDDn\ntGG2Z2lXh+g3HZozKcDkMia9AQg1IRxTE6HzFQ20MytFGXKZrtEurJrOqU/WLNkG\nXmN7BEVyxaI/OmAeoCcriqbFgKWJOescs371whLl8M/zhUQQmG9dOOu602hI8mAF\nr5TWo5hkZMi1Mzf2lZAfjqppgQKBgQDdomaItChj2GdAT5n5xGzzoIOmhukFU8j7\niGrb+pg6u1rA3Yx4+5xROmv+Cm3mcwKRVwXNlSVw1bHjznSxDMo5xsPXBrEZD+/k\njmf+4LSP4CTAfx5EtvI3nPMlxYXYzkubmcSgNfqPEALF2WTzbo+d4c1zTyWHmAc8\nVyF5CLJtEwKBgQDI/Dvd0t0uyfePy5Iljzu0sBKmxp6pjuLSTr0robqGJMPmY1xg\nxCttdiO2F/jSVPfTYSE1J7NuakkPOSXy0KTjpF8/OF3JSyfQdJhKCCcST+qT/JCW\nJa6JdQdZMpk2IJs8kFL93/qKAJEsio1KxyCb2bAuEPRXHhkjTV9jMhwBAQKBgHsh\n0Ik+XfoqriJilw7WfBlWIg4QgcE97TkhbwzLymtGz4K7E2Hbl9rg9EJtFOWlG9YX\nXNf8dpKbhnsjplz+2BMFRKRfyWA9JG/8VfaabHZKduCjPvO6GBOhlMx1UolDA2pt\nIXpIwu1cXc4Bmz5LPGrgmj3nyNfuNIbneWc+17IVAoGAZeGSqEPdAmxxqc9717Dg\nZTDyxPaqNpijI8ywXGjRlkDRSp+HT2HaHdfWVISSIZ3P9iL/Td4d2jdNOETgQE17\ndufn25/0n1TgvaC99Escwxj5KXPWPitP6X4aH4oDqrfvK3yokPHUh/vYQA+QJ7zt\nZib+NAe2RSqQqCwBiNlPhas=\n-----END PRIVATE KEY-----\n",
+  "client_email": "chennai-times-staging@appspot.gserviceaccount.com",
+  "client_id": "103932348245086863354",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chennai-times-staging%40appspot.gserviceaccount.com"
+}

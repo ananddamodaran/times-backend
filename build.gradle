@@ -45,6 +45,7 @@ dependencies {
 
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
+    compile 'com.google.cloud:google-cloud-translate:1.35.0'
 }
 
 endpointsServer {
