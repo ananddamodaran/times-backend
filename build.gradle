@@ -1,11 +1,11 @@
 buildscript {
-    ext.kotlin_version = '1.2.41'
+    ext.kotlin_version = '1.2.61'
     repositories {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:1.0.2'
-        classpath 'com.google.cloud.tools:appengine-gradle-plugin:1.3.3'
+        classpath 'com.google.cloud.tools:endpoints-framework-gradle-plugin:2.0.0'
+        classpath 'com.google.cloud.tools:appengine-gradle-plugin:2.0.0-rc1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -19,7 +19,7 @@ repositories {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '4.9'
 }
 
 def projectId = 'standardenv-gradle'

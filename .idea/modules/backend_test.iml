@@ -17,7 +17,9 @@
             <array />
           </option>
           <option name="pluginClasspaths">
-            <array />
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.2.61/945947f933d5e9db2b16a6391daea51e14a37948/kotlin-scripting-compiler-embeddable-1.2.61.jar" />
+            </array>
           </option>
         </compilerArguments>
       </configuration>
@@ -54,7 +56,7 @@
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-framework:2.0.8" level="project" />
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-management-control-appengine:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-framework-auth:1.0.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.41" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.61" level="project" />
     <orderEntry type="library" name="Gradle: com.google.cloud:google-cloud-translate:1.35.0" level="project" />
     <orderEntry type="library" name="Gradle: com.googlecode.json-simple:json-simple:1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.6.4" level="project" />
@@ -66,8 +68,8 @@
     <orderEntry type="library" name="Gradle: org.slf4j:slf4j-nop:1.7.21" level="project" />
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-management-control:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-management-auth:1.0.5" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.41" level="project" />
-    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.41" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.61" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.61" level="project" />
     <orderEntry type="library" name="Gradle: com.google.cloud:google-cloud-core:1.35.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.cloud:google-cloud-core-http:1.35.0" level="project" />
     <orderEntry type="library" name="Gradle: com.google.apis:google-api-services-translate:v2-rev47-1.22.0" level="project" />
@@ -80,6 +82,7 @@
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-management-config:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: com.google.endpoints:endpoints-management-protos:1.0.5" level="project" />
     <orderEntry type="library" name="Gradle: org.bitbucket.b_c:jose4j:0.5.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.2.61" level="project" />
     <orderEntry type="library" name="Gradle: org.jetbrains:annotations:13.0" level="project" />
     <orderEntry type="library" name="Gradle: joda-time:joda-time:2.9.2" level="project" />
     <orderEntry type="library" name="Gradle: com.google.api:api-common:1.6.0" level="project" />

@@ -25,7 +25,7 @@
           <element id="library" level="project" name="Gradle: com.google.endpoints:endpoints-framework:2.0.8" />
           <element id="library" level="project" name="Gradle: com.google.endpoints:endpoints-management-control-appengine:1.0.5" />
           <element id="library" level="project" name="Gradle: com.google.endpoints:endpoints-framework-auth:1.0.5" />
-          <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.2.41" />
+          <element id="library" level="project" name="Gradle: com.google.cloud:google-cloud-translate:1.35.0" />
           <element id="library" level="project" name="Gradle: com.googlecode.json-simple:json-simple:1.1" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.6.4" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.6.4" />
@@ -36,8 +36,9 @@
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-nop:1.7.21" />
           <element id="library" level="project" name="Gradle: com.google.endpoints:endpoints-management-control:1.0.5" />
           <element id="library" level="project" name="Gradle: com.google.endpoints:endpoints-management-auth:1.0.5" />
-          <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.2.41" />
-          <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.2.41" />
+          <element id="library" level="project" name="Gradle: com.google.cloud:google-cloud-core:1.35.0" />
+          <element id="library" level="project" name="Gradle: com.google.cloud:google-cloud-core-http:1.35.0" />
+          <element id="library" level="project" name="Gradle: com.google.apis:google-api-services-translate:v2-rev47-1.22.0" />
           <element id="library" level="project" name="Gradle: io.swagger:swagger-annotations:1.5.9" />
           <element id="library" level="project" name="Gradle: org.apache.commons:commons-lang3:3.2.1" />
           <element id="library" level="project" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.4.5" />
@@ -48,16 +49,37 @@
           <element id="library" level="project" name="Gradle: com.google.endpoints:endpoints-management-protos:1.0.5" />
           <element id="library" level="project" name="Gradle: org.bitbucket.b_c:jose4j:0.5.1" />
           <element id="library" level="project" name="Gradle: org.jetbrains:annotations:13.0" />
+          <element id="library" level="project" name="Gradle: joda-time:joda-time:2.9.2" />
+          <element id="library" level="project" name="Gradle: com.google.api:api-common:1.6.0" />
+          <element id="library" level="project" name="Gradle: com.google.api:gax:1.28.0" />
+          <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java-util:3.5.1" />
+          <element id="library" level="project" name="Gradle: com.google.api.grpc:proto-google-common-protos:1.11.0" />
+          <element id="library" level="project" name="Gradle: com.google.api.grpc:proto-google-iam-v1:0.12.0" />
+          <element id="library" level="project" name="Gradle: com.google.auth:google-auth-library-credentials:0.9.1" />
+          <element id="library" level="project" name="Gradle: com.google.auth:google-auth-library-oauth2-http:0.9.1" />
+          <element id="library" level="project" name="Gradle: com.google.http-client:google-http-client-appengine:1.23.0" />
+          <element id="library" level="project" name="Gradle: com.google.http-client:google-http-client-jackson:1.23.0" />
+          <element id="library" level="project" name="Gradle: com.google.api:gax-httpjson:0.45.0" />
+          <element id="library" level="project" name="Gradle: io.opencensus:opencensus-api:0.11.1" />
+          <element id="library" level="project" name="Gradle: io.opencensus:opencensus-contrib-http-util:0.11.1" />
           <element id="library" level="project" name="Gradle: org.yaml:snakeyaml:1.12" />
           <element id="library" level="project" name="Gradle: com.google.api-client:google-api-client-protobuf:1.22.0" />
           <element id="library" level="project" name="Gradle: com.google.apis:google-api-services-servicemanagement:v1-rev14-1.22.0" />
           <element id="library" level="project" name="Gradle: io.grpc:grpc-protobuf:1.3.0" />
           <element id="library" level="project" name="Gradle: io.grpc:grpc-stub:1.3.0" />
+          <element id="library" level="project" name="Gradle: org.threeten:threetenbp:1.3.3" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.11" />
+          <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.7" />
+          <element id="library" level="project" name="Gradle: com.google.errorprone:error_prone_annotations:2.2.0" />
+          <element id="library" level="project" name="Gradle: io.grpc:grpc-context:1.9.0" />
           <element id="library" level="project" name="Gradle: com.google.http-client:google-http-client-protobuf:1.22.0" />
           <element id="library" level="project" name="Gradle: io.grpc:grpc-core:1.3.0" />
           <element id="library" level="project" name="Gradle: com.google.api.grpc:grpc-google-common-protos:0.1.6" />
           <element id="library" level="project" name="Gradle: io.grpc:grpc-protobuf-lite:1.3.0" />
           <element id="library" level="project" name="Gradle: com.google.instrumentation:instrumentation-api:0.3.0" />
+          <element id="library" level="project" name="Gradle: com.google.guava:guava:20.0" />
+          <element id="library" level="project" name="Gradle: com.google.code.findbugs:jsr305:3.0.2" />
+          <element id="library" level="project" name="Gradle: com.google.http-client:google-http-client-jackson2:1.23.0" />
           <element id="library" level="project" name="Gradle: com.google.api-client:google-api-client-appengine:1.22.0" />
           <element id="library" level="project" name="Gradle: com.google.oauth-client:google-oauth-client-appengine:1.22.0" />
           <element id="library" level="project" name="Gradle: com.google.api-client:google-api-client-servlet:1.22.0" />
@@ -66,40 +88,19 @@
           <element id="library" level="project" name="Gradle: com.google.http-client:google-http-client-jdo:1.22.0" />
           <element id="library" level="project" name="Gradle: javax.transaction:transaction-api:1.1" />
           <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.21" />
+          <element id="library" level="project" name="Gradle: com.google.http-client:google-http-client:1.23.0" />
           <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpclient:4.0.1" />
           <element id="library" level="project" name="Gradle: org.apache.httpcomponents:httpcore:4.0.1" />
           <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
           <element id="library" level="project" name="Gradle: commons-codec:commons-codec:1.3" />
+          <element id="library" level="project" name="Gradle: com.google.oauth-client:google-oauth-client:1.23.0" />
+          <element id="library" level="project" name="Gradle: com.google.api-client:google-api-client:1.23.0" />
           <element id="library" level="project" name="Gradle: com.google.guava:guava-jdk5:17.0" />
-          <element id="library" level="project" name="Gradle: com.google.code.gson:gson:2.7" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/google-cloud-translate/1.35.0/6d71bd9653213bd0430e6c43098df7a4acd047f6/google-cloud-translate-1.35.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/google-cloud-core/1.35.0/8b360fcdd18b022843400035977dca56773dcdcb/google-cloud-core-1.35.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.cloud/google-cloud-core-http/1.35.0/a3bca89ec8f5f0702508c50fbda73686a87e3fb8/google-cloud-core-http-1.35.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.apis/google-api-services-translate/v2-rev47-1.22.0/884c99a70ead22855a673509a21f5d5f5246812c/google-api-services-translate-v2-rev47-1.22.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.9.2/36d6e77a419cb455e6fd5909f6f96b168e21e9d0/joda-time-2.9.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/api-common/1.6.0/fea8ce6b7d8629f1646641e07a3ab712b56b901e/api-common-1.6.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/gax/1.28.0/932f570c06599f34729e0abb250e999ceb5c2c63/gax-1.28.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.5.1/6e40a6a3f52455bd633aa2a0dba1a416e62b4575/protobuf-java-util-3.5.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/proto-google-common-protos/1.11.0/461c0ca22a2da16107c8e047743991052ee8d1e6/proto-google-common-protos-1.11.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api.grpc/proto-google-iam-v1/0.12.0/ea312c0250a5d0a7cdd1b20bc2c3259938b79855/proto-google-iam-v1-0.12.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auth/google-auth-library-credentials/0.9.1/25e0f45f3b3d1b4fccc8944845e51a7a4f359652/google-auth-library-credentials-0.9.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.auth/google-auth-library-oauth2-http/0.9.1/c0fe3a39b0f28d59de1986b3c50f018cd7cb9ec2/google-auth-library-oauth2-http-0.9.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-appengine/1.23.0/eda0d0f758c1cc525866e52e1226c4eb579d130/google-http-client-appengine-1.23.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson/1.23.0/a72ea3a197937ef63a893e73df312dac0d813663/google-http-client-jackson-1.23.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api/gax-httpjson/0.45.0/f4d2c72e185560b0cec6e2f6eea68adeea1967c2/gax-httpjson-0.45.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-api/0.11.1/54689fbf750a7f26e34fa1f1f96b883c53f51486/opencensus-api-0.11.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opencensus/opencensus-contrib-http-util/0.11.1/82e572b41e81ecf58d0d1e9a3953a05aa8f9c84b/opencensus-contrib-http-util-0.11.1.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.threeten/threetenbp/1.3.3/3ea31c96676ff12ab56be0b1af6fff61d1a4f1f2/threetenbp-1.3.3.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.codehaus.jackson/jackson-core-asl/1.9.11/e32303ef8bd18a5c9272780d49b81c95e05ddf43/jackson-core-asl-1.9.11.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.grpc/grpc-context/1.9.0/28b0836f48c9705abf73829bbc536dba29a1329a/grpc-context-1.9.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/20.0/89507701249388e1ed5ddcf8c41f4ce1be7831ef/guava-20.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client-jackson2/1.23.0/fd6761f4046a8cb0455e6fa5f58e12b061e9826e/google-http-client-jackson2-1.23.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.http-client/google-http-client/1.23.0/8e86c84ff3c98eca6423e97780325b299133d858/google-http-client-1.23.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.oauth-client/google-oauth-client/1.23.0/e57ea1e2220bda5a2bd24ff17860212861f3c5cf/google-oauth-client-1.23.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.api-client/google-api-client/1.23.0/522ea860eb48dee71dfe2c61a1fd09663539f556/google-api-client-1.23.0.jar" />
-          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.5.1/8c3492f7662fa1cbf8ca76a0f5eb1146f7725acd/protobuf-java-3.5.1.jar" />
+          <element id="library" level="project" name="Gradle: com.google.protobuf:protobuf-java:3.5.1" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.2.61/b0ffdd7ab0bae086a50816e55d94e298311d4c88/kotlin-stdlib-jdk8-1.2.61.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.61/5bc44acc4b3f0d19166ae3e50454b41e8ff29335/kotlin-stdlib-1.2.61.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.61/bc77c34ff80df88b4d9b0418ea4ae758544573f3/kotlin-stdlib-jdk7-1.2.61.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.61/772de03e12d932f489e41aef997d26c20a4ebee6/kotlin-stdlib-common-1.2.61.jar" />
         </element>
       </element>
     </root>
