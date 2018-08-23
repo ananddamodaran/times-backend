@@ -22,7 +22,7 @@ task wrapper(type: Wrapper) {
     gradleVersion = '4.9'
 }
 
-def projectId = 'standardenv-gradle'
+def projectId = 'chennai-times-staging'
 
 apply plugin: 'java'
 apply plugin: 'kotlin'
